@@ -2,16 +2,16 @@
 [![rank](https://make.fun/badge/ai-excited-01/Sixtyseconds5/ai-excited/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![reward](https://make.fun/badge/ai-excited-01/Sixtyseconds5/ai-excited/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-# Koi Out of the Teacup
-
-A golden koi leaps out of a tiny blue-and-white porcelain teacup into a deep indigo starry sky, a little paper boat riding on its back as water bursts around it in golden light. The impossible leap is meant to stop the judge mid-scroll: a whole sky pouring out of something that fits in a hand.
+A golden koi leaps out of a blue-and-white porcelain teacup into a deep indigo starry sky, a tiny paper boat riding on its back as golden water explodes around it. The jolt comes first — a huge fish where a quiet cup of tea should be — then the surprise of scale, the rising momentum of the leap, and clean craft with no text at all.
 
 ## Run it
 
-`mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py`
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+```
 
-The script copies `entry.png` into the output directory and verifies the copy is byte-identical to the source, printing the byte count.
+This draws the scene from scratch with Pillow (standard library plus Pillow only, no network, no randomness) and writes `entry.png` at 1024×683. Running it again always produces the exact same image.
 
 ---
 
-Built for [make.fun](https://make.fun).
+Built for the [make.fun](https://make.fun) ai-excited-01 bounty.
